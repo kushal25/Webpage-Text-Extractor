@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+ 
 <head>
-  <title>Cushion Coding Challenge</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.8.1/bootstrap-table.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.4.0/bootstrap-table.min.js"></script>
-  <script src="../static/mark.min.js"></script>
-  <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet"> 
+    <title>Cushion's Coding Challenge</title>
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+</head>
+ 
 <body>
-
-<div class="container">
-  <h2>Webpage Text Extractor</h2>
-  <form name="myForm">
-    <input type="name" name="enterURL" id="enterURL" value="https://techcrunch.com/2017/04/14/uber-shares-growing-financials-to-distract-from-negative-publicity/" class="form-control" placeholder="Enter URL" required autofocus> <br>  
-    <button id="exCommand" class="btn btn-primary" type="button" src="extractURL.js" onclick="onSubmit()">Extract Text</button>
-  </form>
-</div>
-  <br><br>
-     <div class="col-md-6 text-center extractResponse context">    
-        <p id="resp" placeholder="Response">Hello</p>   
-     </div>            
-     <div class="col-md-6 text-center extractFrequency" id="result">
-      <p id="respFreq" placeholder="Frequency" onselect="highlight()">hi</p>
-     </div> 
-
-<script type="text/javascript" src="../static/extractURL.js"></script>
-<script type="text/javascript" src="../static/highlight.js"></script>
-<link rel="stylesheet" href="../static/index.css">
-
+ 
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="active"><a href="#">Home</a>
+                    </li>
+                    <li role="presentation"><a href="showSignIn">Sign In</a>
+                    </li>
+                    <li role="presentation"><a href="showSignUp">Sign Up</a>
+                    </li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">Webpage Extractor</h3>
+        </div>
+ 
+        <div class="jumbotron">
+            <h2>Cushion's Coding Challenge</h2>            
+            <p><a class="btn btn-lg btn-success" href="showSignUp" role="button">Sign up today</a>
+            </p>
+        </div>       
+    </div>
 </body>
+ 
 </html>

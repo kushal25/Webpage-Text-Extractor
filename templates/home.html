@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cushion Coding Challenge</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="../static/js/mark.min.js"></script>
+<body>
+
+<div class="container">
+    <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">          
+            <li role="presentation" onclick="logout()"><a href="logout">Logout</a></li>            
+          </ul>
+        </nav>
+      </div>
+  <h3 class="text-center">Webpage Text Extractor</h3>
+  <br>
+  <form name="myForm">
+    <input type="name" name="enterURL" id="enterURL" class="form-control" placeholder="Enter URL" required autofocus> <br>  
+    <button id="exCommand" class="btn btn-primary" type="button" src="extractURL.js" onclick="onSubmit()">Extract Text</button>
+  </form>
+</div>
+  <br><br>
+<div class="col-md-6 context">
+  <h3 class="text-center">Text View </h3>    
+  <p id="resp" class="extractResponse"></p>   
+</div>            
+<div class="col-md-6 text-center" id="result">
+  <h3> Summary </h3>
+  <!-- <p id="respFreq" class="extractFrequency" onselect="highlight()"></p> -->
+  <table class="myTable text-center" id="respFreq" class="extractFrequency">
+    
+  </table>
+</div> 
+
+<script type="text/javascript" src="../static/js/extractURL.js"></script>
+<script type="text/javascript" src="../static/js/highlight.js"></script>
+<link rel="stylesheet" href="../static/css/index.css">
+
+</body>
+</html>

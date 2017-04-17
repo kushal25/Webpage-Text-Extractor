@@ -1,0 +1,29 @@
+.extractResponse {
+	background: #F6FAFA;
+}
+
+.extractFrequency {
+	background: #CDF9FF;
+}
+
+table, th , td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+  margin: 0 auto;
+    text-align:center;
+    font-size:15px
+}
+table tr:nth-child(odd) {
+  background-color: #dfdfdf;
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+th {
+    background:#abcdef;
+}
+
+mark{
+    background: orange;
+}
